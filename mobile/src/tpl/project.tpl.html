@@ -1,0 +1,52 @@
+<div >
+
+    <header class="pro-header">
+        <a ui-sref="index"><span class="fa fa-bars"></span></a>
+        <div class="search">
+            <span class="fa fa-search"></span>
+            <input type="text" name="search"/>
+        </div>
+        <span class="btn1">搜索</span>
+    </header>
+
+    <main class="pro-main">
+        <ul>
+            <li ng-repeat="proItem in projectList">
+                <a href="#">
+                    <p class="proTitle">{{proItem.proTittle}} <span style="color:red;">￥{{proItem.proPrie}}</span></p>
+                    <div>
+                        <img src="../../img/indexImg/list_ico1.png" class="proPic"/>
+                        <span>{{proItem.proHot}}</span>
+                        <img src="../../img/indexImg/list_ico6.png" class="proPic"/>
+                        <span>{{proItem.zhangshu}}张</span>
+                        <span class="jiezhi">{{proItem.jiezhidata}}</span>
+                        <span class="fa fa-clock-o"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <div class="h-footer">
+        <div class="h-f" ui-sref="index">
+            <img src="../img/indexImg/f_ico1_here.png" alt=""/>
+            <h6>首页</h6>
+        </div>
+
+        <div class="h-f" ui-sref="desCenter">
+            <img src="../img/indexImg/f_ico2.png" alt=""/>
+            <h6>设计中心</h6>
+        </div>
+
+        <div class="h-f" ui-sref="saicheng">
+            <img src="../img/indexImg/f_ico3.png" alt=""/>
+            <h6>商业赛事</h6>
+        </div>
+
+        <div class="h-f" ui-sref="home">
+            <img src="../img/indexImg/f_ico4.png" alt=""/>
+            <h6>我的</h6>
+        </div>
+    </div>
+
+</div>

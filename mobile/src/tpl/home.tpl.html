@@ -1,0 +1,86 @@
+
+<div class="home-bg" ng-controller="homectr">
+    <!-- header-->
+    <div>
+        <!-- 头像-->
+        <div class="home-header">
+            <img src="../img/header/{{img}}.jpg" alt=""/>
+            <h6>{{name}}</h6>
+        </div>
+
+        <div class="home-bag">
+            <div class="home-zero">
+                <h6>0</h6>
+                <img src="../img/header/h8.png" alt=""/>
+            </div>
+
+            <div class="home-i"></div>
+
+            <div class="home-zero">
+                <h6>0.000</h6>
+                <img src="../img/header/h9.png" alt=""/>
+            </div>
+
+            <div class="home-i"></div>
+
+            <div class="home-zero">
+                <h6>0</h6>
+                <img src="../img/header/h10.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <!-- 内容-->
+    <div class="home-con">
+        <div class="home-con1">
+            <img src="../img/header/h6.png" alt=""/>
+            <h6>我的代金券</h6>
+            <img src="../img/header/h15.png" alt=""/>
+        </div>
+
+        <div class="home-con1">
+            <img src="../img/header/h4.png" alt=""/>
+            <h6>商业大赛</h6>
+            <img src="../img/header/h15.png" alt=""/>
+        </div>
+
+        <div class="home-con1">
+            <img src="../img/header/h5.png" alt=""/>
+            <h6>悬赏任务</h6>
+            <img src="../img/header/h15.png" alt=""/>
+        </div>
+
+        <div class="home-con1">
+            <img src="../img/header/h5.png" alt=""/>
+            <h6>雇佣任务</h6>
+            <img src="../img/header/h15.png" alt=""/>
+        </div>
+
+        <div class="home-con1" ui-sref="login" ng-click="do()">
+            <img src="../img/header/h7.png" alt=""/>
+            <h6 id="go">退出登录</h6>
+            <img src="../img/header/h15.png" alt=""/>
+        </div>
+    </div>
+    <!-- footer-->
+    <div class="home-footer">
+        <div class="home-f" ui-sref="index">
+            <img src="../img/header/h11.png" alt=""/>
+            <h6>首页</h6>
+        </div>
+
+        <div class="home-f" ui-sref="desCenter">
+            <img src="../img/header/h12.png" alt=""/>
+            <h6>设计中心</h6>
+        </div>
+
+        <div class="home-f" ui-sref="saicheng">
+            <img src="../img/header/h13.png" alt=""/>
+            <h6>商业赛事</h6>
+        </div>
+
+        <div class="home-f" ui-sref="home">
+            <img src="../img/header/h14.png" alt=""/>
+            <h6>我的</h6>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head lang="en" >
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>第一设计网</title>
+    <link rel="shortcut icon" href="img/32_small.jpg" type="image/x-icon">
+    <!-- 公共-->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="components/materialize/dist/css/materialize.css"/>
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="components/swiper/dist/css/swiper.css"/>
+    <!-- 个人-->
+    <link rel="stylesheet" href="css/register/register.css"/>
+    <link rel="stylesheet" href="css/login/login.css"/>
+    <link rel="stylesheet" href="css/home/home.css"/>
+    <link rel="stylesheet" href="css/saicheng/saicehng.css"/>
+    <link rel="stylesheet" href="css/details/details.css"/>
+    <link rel="stylesheet" href="css/index/index.css"/>
+    <link rel="stylesheet" href="css/designjob/designjob.css"/>
+    <link rel="stylesheet" href="css/matchDetail/matchDetail.css"/>
+    <link rel="stylesheet" href="css/project/project.css"/>
+    <link rel="stylesheet" href="css/zixun/zixunone.css"/>
+    <link rel="stylesheet" href="css/designCenter/designCenter.css"/>
+    <link rel="stylesheet" href="css/dss/dss.css"/>
+    <link rel="stylesheet" href="css/need/need.css"/>
+    <link rel="stylesheet" href="css/search/search.css"/>
+    <link rel="stylesheet" href="css/service/service.css"/>
+</head>
+<body>
+<!--模板块-->
+<div ui-view="indexView"></div>
+<div ui-view="registerView"></div>
+<div ui-view="loginView"></div>
+<div ui-view="homeView"></div>
+<div ui-view="saichengView"></div>
+<div ui-view="detailsView"></div>
+<div ui-view="designjobView"></div>
+<div ui-view="matchDetailView"></div>
+<div ui-view="projectView"></div>
+<div ui-view="zixunoneView"></div>
+<div ui-view="desCenterView"></div>
+<div ui-view="dssView"></div>
+<div ui-view="needView"></div>
+<div ui-view="searchView"></div>
+<div ui-view="serviceView"></div>
+
+<!--公共-->
+<script src="components/jquery/dist/jquery.js"></script>
+<script src="components/angular/angular.js"></script>
+<script src="components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="components/materialize/dist/js/materialize.js"></script>
+<script src="components/swiper/dist/js/swiper.jquery.js"></script>
+<script src="js/myapp.js"></script>
+<script src="js/config.js"></script>
+<!--个人-->
+<script src="js/controller/register/register.ctr.js"></script>
+<script src="js/controller/login/login.ctr.js"></script>
+<script src="js/controller/home/home.ctr.js"></script>
+<script src="js/controller/saicheng/saicheng.ctr.js"></script>
+<script src="js/controller/details/details.ctr.js"></script>
+<script src="js/controller/index/index.ctr.js"></script>
+<script src="js/controller/project/project.ctr.js"></script>
+<script src="js/controller/zixun/zixunone.js"></script>
+<script src="js/controller/designCenter/designCenter.ctr.js"></script>
+<script src="js/controller/dss/dss.ctr.js"></script>
+<script src="js/controller/service/service.ctr.js"></script>
+</body>
+</html>

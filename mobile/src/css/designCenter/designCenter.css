@@ -1,0 +1,145 @@
+.h-header {
+    width: 100%;
+    height: 50px;
+    background: #ef3442;
+    box-sizing: border-box;
+    padding: 10px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 999 !important;
+}
+.h-header .fa-search {
+    font-size: 20px;
+}
+.h-header .h-shop {
+    width: 74px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+.h-header .h-shop .h-downli {
+    display: none;
+    background: url("../../img/bg.png") no-repeat;
+}
+.h-header .h-shop .h-downli a {
+    color: #646464;
+    display: block;
+    padding: 8px 0;
+}
+.h-header .h-myshop {
+    font-size: 0;
+    color: #ef3442;
+}
+.h-dsturn{
+    height: 160px!important;
+    background-color: #EFEFF4;
+    margin-top: 54px;
+}
+.h-dsturn a{
+    margin-top: 115px;
+}
+.h-dsturn a img{
+    height: 164px;
+}
+.greybg {
+    width: 100%;
+    height: 10px;
+    background: #EFEFF4;
+}
+
+
+section {
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+    height: 122px;
+    overflow: hidden;
+}
+section .h-li-bg {
+    float: left;
+    /*width: 246px;*/
+    /*height: 124px;*/
+    margin-right: 16px;
+}
+section .h-li-bg img{
+    width: 100px;
+    height: 100px;
+}
+section div .h-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+section div .h-title .h-envelope img,
+section div .h-title .h-card img {
+    width: 28px;
+    height: 16px;
+}
+section .h-content {
+    color: #949393;
+}
+section .h-content,
+section .h-turnover {
+    font-size: 14px;
+}
+section .h-turnover {
+    margin-top: 8px;
+    color: #ababab;
+}
+section .h-turnover .h-price,
+section .h-turnover .h-count {
+    color: #ef3442;
+}
+section .h-turnover .h-price {
+    margin-right: 20px;
+}
+.carousel.carousel-slider{
+    top: -3px;
+}
+.h-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f7f7f8;
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+}
+.h-footer .h-f {
+    width: 25%;
+}
+.h-footer .h-f img {
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+}
+.h-footer .h-f h6 {
+    text-align: center;
+    font-size: 12px;
+}

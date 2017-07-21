@@ -1,0 +1,58 @@
+<div>
+    <div class="h-op">
+        <header class="h-header">
+            <div class="fa fa-search" ui-sref="search"></div>
+            <div class="h-shop">店铺 <span class="fa fa-chevron-down"></span>
+                <div class="h-downli">
+                    <a>店铺</a>
+                    <a>服务</a>
+                    <a>案例</a>
+                </div>
+            </div>
+            <div class="h-myshop">我的店铺</div>
+        </header>
+
+        <slider option="slideList" full-width="false"></slider>
+        <div class="greybg"></div>
+        <section ng-repeat="item in sectionList" ui-sref="dss">
+            <div class="h-li-bg">
+                <img class="h-img" ng-src="../img/design/{{item.src}}">
+            </div>
+            <div>
+                <p class="h-title">{{item.title}}|
+                <span class="h-envelope">
+                    <img src="../img/design/cp2.png" alt="">
+                </span>
+                <span class="h-card">
+                    <img src="../img/design/cp3.png" alt="">
+                </span>
+                </p>
+                <p class="h-content">{{item.content}}</p>
+                <p class="h-turnover">成交金额 <span class="h-price">￥{{item.price}}</span>成交 <span class="h-count">{{item.count}}</span>次</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="h-footer">
+        <div class="h-f" ui-sref="index">
+            <img src="../img/design/f_ico1.png" alt=""/>
+            <h6>首页</h6>
+        </div>
+
+        <div class="h-f" ui-sref="desCenter">
+            <img src="../img/design/f_ico2_here.png" alt=""/>
+            <h6>设计中心</h6>
+        </div>
+
+        <div class="h-f" ui-sref="saicheng">
+            <img src="../img/design/f_ico3.png" alt=""/>
+            <h6>商业赛事</h6>
+        </div>
+
+        <div class="h-f" ui-sref="home">
+            <img src="../img/design/f_ico4.png" alt=""/>
+            <h6>我的</h6>
+        </div>
+    </div>
+</div>
+

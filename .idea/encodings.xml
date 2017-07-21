@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mobile/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/article.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/der.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/designdes.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/indexder.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/indexper.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/indexser.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/project.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/users.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/models/zixun.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/routers/der.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/routers/indexder.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/routers/indexper.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/routers/indexser.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/routers/project.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/routers/users.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/routers/zixun.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/controller/designCenter/designCenter.ctr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/controller/dss/dss.ctr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/controller/home/home.ctr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/controller/index/index.ctr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/controller/login/login.ctr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/controller/project/project.ctr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/controller/register/register.ctr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/controller/service/service.ctr.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mobile/src/js/myapp.js" charset="UTF-8" />
+  </component>
+</project>

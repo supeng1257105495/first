@@ -1,0 +1,58 @@
+
+
+<header class="ma-header">
+    <a class="fa fa-angle-left" ui-sref="index"></a>
+    <p class="matchdetail">大赛详情</p>
+</header>
+<main class="ma-main">
+    <div class="header-pic"></div>
+    <div class="art">
+        <h2 class="art-title">2016 “多彩贵州·寻美黔西南” 旅游文...</h2>
+        <span class="data">征稿时间：2016.07.30-2016.08.16</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-eye">21.3万</span>
+        <br/>
+        <br/>
+        <img src="../img/indexImg/editor_57a30363bb036.png"/>
+        <img src="../img/indexImg/editor_57a2fbde8311d.png"/>
+        <img src="../img/indexImg/editor_57a2fbed90044.png"/>
+        <img src="../img/indexImg/editor_57a2fc046c23c.png"/>
+        <img src="../img/indexImg/editor_57a2fc18128c6.png"/>
+        <img src="../img/indexImg/editor_57a2fc269a0e8.png"/>
+        <img src="../img/indexImg/editor_57a2fc338b2ba.png"/>
+        <img src="../img/indexImg/editor_57a2fc3f7b105.png"/>
+        <img src="../img/indexImg/editor_57a2fc4bb859b.png"/>
+        <img src="../img/indexImg/editor_57a3038058260.png"/>
+
+    </div>
+</main>
+<footer  id="top">
+    <a href=""></a>
+</footer>
+
+<script>
+    $(function(){
+        //置顶按钮显示/隐藏实现
+        $(window).scroll(function(){
+            var w_height = $(window).height();//浏览器高度
+            console.log(w_height);
+            var scroll_top =$(document).scrollTop();//滚动条到顶部的垂直高度
+            console.log(scroll_top);
+            if(scroll_top > w_height){
+                $("#top").show();
+            }else{
+                $("#top").hide();
+            }
+        });
+        //置顶
+        $("#top").click(function(e){
+            e.preventDefault();
+            $(document.documentElement).animate({
+                scrollTop: 0
+            },200);
+            //支持chrome
+            $(document.body).animate({
+                scrollTop: 0
+            },200);
+        });
+    })
+
+</script>

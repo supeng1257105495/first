@@ -1,0 +1,129 @@
+
+.de-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    background: #ef3442;
+    overflow: hidden;
+    line-height: 40px;
+    color: #fff;
+    z-index: 5;
+    padding: 5px;
+}
+.de-header .fa {
+    float: left;
+    margin: 5px 5px;
+    font-size: 30px;
+    z-index: 10;
+    color: #fff;
+}
+header .matchdetail {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.de-main{
+    position: relative;
+    top: 60px;
+    left: 0;
+    overflow: hidden;
+    color: #3d4145;
+}
+main .baseMes {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    background: #fff;
+}
+main .baseMes .sel {
+    overflow: hidden;
+    padding: 10px;
+}
+main .baseMes .sel .sel1 {
+    float: left;
+}
+main .baseMes .sel .sel2 {
+    float: right;
+}
+main .baseMes .sel .fa {
+    float: right;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 3px;
+}
+main .baseMes .prePrice .pre {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+main .baseMes .prePrice input {
+    border: 0;
+    line-height: 15px;
+    msrgin:0;
+}
+main .needs {
+    margin: 10px 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    font-size: 14px;
+}
+main .needs p {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+main .needs textarea {
+    margin: 10px 0 0;
+    border: 0;
+    font-size: 12px;
+    height: 70px;
+}
+main .sub {
+    text-align: center;
+}
+main .sub .btn {
+    margin: 5px auto;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius:6px ;
+}
+.h-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f7f7f8;
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+}
+.h-footer .h-f {
+    width: 25%;
+}
+.h-footer .h-f img {
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+}
+.h-footer .h-f h6 {
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,154 @@
+<div >
+
+    <header class="in-header">
+        <h1 class="title">
+            <a>
+                <img ng-src="../img/indexImg/logo.png" alt="logo"/>
+            </a>
+        </h1>
+    </header>
+
+    <main class="in-main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide" ui-sref="matchDetail" ng-repeat="slider in sliderList">
+                    <img ng-src="../img/{{slider.slidersrc}}">
+                </a>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <ul class="mainNav">
+            <li ui-sref="designjob">
+                <a>
+                    <img src="../img/indexImg/ct1.png" alt="needs"/>
+                    <p>发布需求</p>
+                </a>
+            </li>
+            <li style="border-left:1px solid #eee;border-right:1px solid #eee;">
+                <a href="#">
+                    <img src="../img/indexImg/ct2.png" alt="needs"/>
+                    <p>一对一服务</p>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="saicheng">
+                    <img src="../img/indexImg/ct3.png" alt="needs"/>
+                    <p>办大赛</p>
+                </a>
+            </li>
+            <hr style="width:90%;margin:0 auto;color:#eee;"/>
+            <li>
+                <a href="#">
+                    <img src="../img/indexImg/ct4.png" alt="needs"/>
+                    <p>先逛逛</p>
+                </a>
+            </li>
+            <li style="border-left:1px solid #eee;border-right:1px solid #eee;">
+                <a ui-sref="project">
+                    <img src="../img/indexImg/ct5.png" alt="needs"/>
+                    <p>找任务</p>
+                </a>
+            </li>
+            <li>
+                <a ui-sref="project">
+                    <img src="../img/indexImg/ct6.png" alt="needs"/>
+                    <p>一键下单</p>
+                </a>
+            </li>
+
+        </ul>
+        <div class="perfectCase">
+            <p class="perfect">优秀案例</p>
+            <ul class="perfectCase-item">
+                <li class="perfectCase-item" ng-repeat="item in perfectList">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-image">
+                                <img ng-src="../img/indexImg/{{item.perfectsrc}}">
+                            </div>
+                            <ul class="card-content">
+                                <li class="classify">
+                                    <p>{{item.classify}}</p>
+                                </li>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <img src="../img/indexImg/list_ico1.png" alt="list_ico1"/>
+                                    <p>{{item.hot}}</p>
+                                </li>
+                                <li>
+                                    <img src="../img/indexImg/list_ico2.png" alt="list_ico2"/>
+                                    <p>{{item.heart}}</p>
+                                </li>
+                                <li>
+                                    <img src="../img/indexImg/list_ico3.png" alt="list_ico3"/>
+                                    <p>{{item.zan}}</p>
+                                </li>
+                                <li>
+                                    <img src="../img/indexImg/list_ico4.png" alt="list_ico4"/>
+                                    <p>{{item.mess}}</p>
+                                </li>
+                            </ul>
+                            <div class="card-action">
+                                <div>
+                                    <img ng-src="../img/indexImg/{{item.designerSrc}}" alt="凇源"/>
+                                    <span>{{item.designer}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="perfectCase" style="margin-bottom:66px;">
+            <p class="perfect">热门服务</p>
+            <ul class="perfectCase-item">
+                <li class="perfectCase-item" ng-repeat="service in serviceList">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-image">
+                                <img ng-src="../img/indexImg/{{service.servicesrc}}">
+                            </div>
+                            <div class="card-content">
+                                <p class="classify">{{service.serviceClassify}}</p>
+                                <div class="price">
+                                    <span class="left p1">￥{{service.prive}}</span>
+                                    <p class="right">成交<span class="p1">{{service.p1}}</span>次</p>
+                                </div>
+                                <p class="introduction">{{service.intro}}</p>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <span>{{service.servicedisigner}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="h-footer">
+        <div class="h-f" ui-sref="index">
+            <img src="../img/indexImg/f_ico1_here.png" alt=""/>
+            <h6>首页</h6>
+        </div>
+
+        <div class="h-f" ui-sref="desCenter">
+            <img src="../img/indexImg/f_ico2.png" alt=""/>
+            <h6>设计中心</h6>
+        </div>
+
+        <div class="h-f" ui-sref="saicheng">
+            <img src="../img/indexImg/f_ico3.png" alt=""/>
+            <h6>商业赛事</h6>
+        </div>
+
+        <div class="h-f" ui-sref="home">
+            <img src="../img/indexImg/f_ico4.png" alt=""/>
+            <h6>我的</h6>
+        </div>
+    </div>
+
+</div>

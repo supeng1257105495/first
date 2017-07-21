@@ -1,0 +1,85 @@
+<div class="res-bg">
+
+    <!-- header-->
+    <div class="res-back">
+        <a href="#" ui-sref="login"><i class="fa fa-angle-left"></i></a>
+        <p>注册</p>
+    </div>
+
+    <!-- logo1-->
+    <div class="res-img">
+        <img src="../img/logo1.png" alt=""/>
+    </div>
+
+    <!-- form-->
+    <div class="row res-one">
+
+        <form class="col s12" name="myform" ng-submit="resSubmit()">
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input id="last_name" type="text" class="username " name="username" ng-model="username" ng-blur="resUsername()"
+                           required
+                           ng-minlength="6"
+                           ng-maxlength="12">
+                    <label for="last_name" ><span class="res-labe">用户名：</span></label>
+                </div>
+                <div class="input-field col s4 ">
+                    <p class="form-control-static res-p" ng-show="myform.username.$error.required">请输入用户名</p>
+                    <p class="form-control-static res-p" ng-show="check"><i class="fa fa-check-square-o"></i></p>
+                    <p class="form-control-static res-p" ng-show="myform.username.$error.minlength||myform.username.$error.ng-maxlength">长度6-12</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input id="password" type="password" class="validate" name="password" ng-model="password"
+                           required
+                           ng-minlength="6">
+                    <label for="password" ><span class="res-labe">密码</span></label>
+                </div>
+                <div class="input-field col s4 ">
+                    <p class="form-control-static res-p" ng-show="myform.password.$error.required">请输入密码</p>
+                    <p class="form-control-static res-p" ng-show="password!=undefined"><i class="fa fa-check-square-o"></i></p>
+                    <p class="form-control-static res-p" ng-show="myform.password.$error.minlength">密码不得少于6位</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input id="password1" type="password" class="validate" name="password1" ng-model="password1"
+                           required>
+                    <label for="password" ><span class="res-labe">再次输入密码</span></label>
+                </div>
+                <div class="input-field col s4 ">
+                    <p class="form-control-static res-p" ng-show="myform.password1.$error.required">请输入密码</p>
+                    <p class="form-control-static res-p" ng-show="password1==password&&password!=undefined"><i class="fa fa-check-square-o"></i></p>
+                    <p class="form-control-static res-p" ng-show="password!=password1">两次密码不同</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input id="email" type="email" class="validate" name="email" ng-model="email" ng-blur="resEmail()"
+                           required
+                           ng-pattern="/^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/"
+                            >
+                    <label for="email" ><span class="res-labe">Email</span></label>
+                </div>
+                <div class="input-field col s4 ">
+                    <p class="form-control-static res-p" ng-show="myform.email.$error.required">请输入邮箱</p>
+                    <p class="form-control-static res-p" ng-show="myform.email.$error.pattern">邮箱格式不对</p>
+                    <p class="form-control-static res-p" ng-show="check1"><i class="fa fa-check-square-o"></i></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s10">
+                    <input type="submit" class="btn waves-effect  deep-orange darken-3 res-sub" ng-disabled="myform.$invalid"/>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>

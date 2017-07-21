@@ -1,0 +1,63 @@
+<div class="res-bg" >
+
+    <!-- header-->
+    <div class="log-back">
+        <a href="#"><i class="fa fa-angle-left"></i></a>
+        <p>登录</p>
+    </div>
+
+    <!-- logo1-->
+    <div class="log-img">
+        <img src="../img/logo1.png" alt=""/>
+    </div>
+
+    <!-- form-->
+    <div class="row log-one">
+
+        <form class="col s12" name="myform" ng-submit="logSubmit()">
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input id="last_name" type="text" class="username " name="username" ng-model="username"
+                           required
+                           ng-minlength="6"
+                           ng-maxlength="12">
+                    <label for="last_name" ><span class="log-labe">用户名：</span></label>
+                </div>
+                <div class="input-field col s4 ">
+                    <p class="form-control-static log-p" ng-show="myform.username.$error.required">请输入用户名</p>
+                    <p class="form-control-static log-p" ng-show="under" style="color:red;">用户名不存在</p>
+                    <p class="form-control-static log-p" ng-show="myform.username.$error.minlength||myform.username.$error.ng-maxlength">长度6-12</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s8">
+                    <input id="password" type="password" class="validate" name="password" ng-model="password"
+                           required
+                           ng-minlength="6">
+                    <label for="password" ><span class="log-labe">密码</span></label>
+                </div>
+                <div class="input-field col s4 ">
+                    <p class="form-control-static log-p" ng-show="myform.password.$error.required">请输入密码</p>
+                    <p class="form-control-static log-p" ng-show="myform.password.$error.minlength">密码不得少于6位</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s11">
+                    <input type="submit" class="btn waves-effect  deep-orange darken-3 log-sub" ng-disabled="myform.$invalid" value="登录"/>
+                </div>
+            </div>
+        </form>
+        <!-- 注册-->
+        <div class="row log-btn">
+            <div class="input-field col s11" style="margin-top: 0">
+                <button class="btn waves-effect   log-sub" ui-sref="register">注册</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

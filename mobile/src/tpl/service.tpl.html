@@ -1,0 +1,80 @@
+<div class="container l-context3" >
+    <!--红色头部开始-->
+    <div class="row" style="margin:0;padding:0;">
+        <div class="red-head3">
+            <div class="fa fa-angle-left"></div>
+            <div class="match3">服务详情</div>
+            <div style="width:18px;"></div>
+        </div>
+    </div>
+    <!--红色头部结束-->
+    <!--商品图片展示开始-->
+    <div class="commodity">
+        <img src="../img/need/o1a.jpg" alt="" class="o_1"/>
+    </div>
+    <!--商品图片展示结束-->
+    <!--logo文字信息开始-->
+    <div class="logo-text">
+        <p class="logo-plan">logo设计</p>
+        <p class="logo-plan1">专业logo设计，标志设计，满意为止，价格优惠，有意QQ联系</p>
+        <p>
+            <span class="logo-plan2">￥499.00</span>
+            <span class="logo-plan3">成交</span>
+            <span class="logo-plan4">23</span>
+            <span class="logo-plan3" style="margin:0;">次</span>
+        </p>
+    </div>
+    <!--logo文字信息结束-->
+    <!--酷品设计开始-->
+    <div class="place">
+        <img src="../img/need/o1.jpg" alt="" class="o_1a"/>
+        <div class="place1">
+            <p>酷品设计</p>
+            <div class="list1">
+                <img src="../img/need/l5.png" alt="" class="list"/>
+                <span class="list-text">深圳市</span>
+            </div>
+        </div>
+        <div class="money">
+            <p>44</p>
+            <p>成交次数</p>
+        </div>
+        <div class="VOLAMOUNT">
+            <p>16856</p>
+            <p>成交金额</p>
+        </div>
+    </div>
+    <!--酷品设计结束-->
+    <!--top切换开始-->
+    <div>
+        <div class="l-server">
+            <span class="push">服务详情</span>
+            <span class="push">相关推荐</span>
+        </div>
+        <div class="l-server-li">
+            <div class="l-serverdetail">
+                <img src="../img/need/s1.jpg" alt="" class="originality" />
+            </div>
+            <div class="l-recom" style="display: none;">
+                <figure ng-repeat="item in recomList" class="recom">
+                    <img ng-src="../img/need/{{item.src}}" alt="" class="recom1">
+                    <figcaption>
+                        <p class="item">{{item.title}}</p>
+                        <div>
+                            <span class="l-price">￥{{item.price}}</span>
+                            <span class="l-fr">成交<span class="l-count">{{item.count}}</span>次</span>
+                        </div>
+                        <div class="l-content">{{item.content}}</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!--top切换结束-->
+    <!--购买开始-->
+    <div class="l-foot">
+        <div class="buy" ui-sref="dss">进店逛逛</div>
+        <div class="buy1">立即购买</div>
+    </div>
+    <!--购买结束-->
+</div>

@@ -1,0 +1,60 @@
+<div >
+
+    <div class="sai-head">
+        <div class="btn-group">
+            <span class="sai-btn"  ng-class="{'active':activeIndex==0}" ng-click="changeIndex(0)">商业大赛</span>
+            <span class="sai-btn"  ng-class="{'active':activeIndex==1}" ng-click="changeIndex(1)">咨讯大赛</span>
+        </div>
+        <a ui-sref="need"><span class="sai-i0"></span></a>
+    </div>
+
+    <div class="sai-one" ng-if="activeIndex==0">
+        <div class="sai-img" ui-sref="details" style="margin-top: 44px"></div>
+
+        <a ui-sref="details">
+            <div class="sai-re1" ng-repeat="info in saicheng" style="background:#fff">
+                <img ng-src="../img/saicheng/{{info.src}}" alt="">
+                <h4>{{info.title}}</h4>
+                <p><span class="sai-i1"></span> {{info.num}} <span class="sai-i2"></span> {{info.num2}}</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="sai-two" ng-if="activeIndex==1">
+        <div class="sai-img1" style="margin-top: 44px"></div>
+
+        <a ui-sref="zixunone">
+            <div class="sai-re2" ng-repeat="zi in zixun" style="background: #ffffff;">
+                <img ng-src="../img/zixun/{{zi.src}}" alt="" >
+                <div class="sai-hid">
+                    <h4>{{zi.title}}</h4>
+                </div>
+                <p>{{zi.p}}</p>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="sa-footer">
+        <div class="sa-f" ui-sref="index">
+            <img src="../../img/zixun/69.png" alt=""/>
+            <h6>首页</h6>
+        </div>
+
+        <div class="sa-f" ui-sref="desCenter">
+            <img src="../../img/zixun/70.png" alt=""/>
+            <h6>设计中心</h6>
+        </div>
+
+        <div class="sa-f" ui-sref="saicheng">
+            <img src="../../img/zixun/71.png" alt=""/>
+            <h6>商业赛事</h6>
+        </div>
+
+        <div class="sa-f" ui-sref="home">
+
+            <img src="../../img/zixun/72.png" alt=""/>
+            <h6>我的</h6>
+        </div>
+    </div>
+</div>

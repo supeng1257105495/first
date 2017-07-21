@@ -1,0 +1,166 @@
+.dss-header {
+    width: 100%;
+    height: 50px;
+    background: #ef3442;
+    box-sizing: border-box;
+    padding: 10px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 999 !important;
+}
+.dss-header .fa-chevron-left {
+    font-size: 25px;
+    margin-top: 5px;
+}
+.dss-header .dss-shoptitle {
+    font-size: 21px;
+    text-align: center;
+}
+.dss-header .fa-volume-control-phone {
+    font-size: 25px;
+    margin-top: 5px;
+}
+.dss-main {
+    margin-top: 43px;
+    background: #eee;
+    font-size: 14px;
+}
+.dss-subbg img {
+    width: 100%;
+}
+.dss-sub {
+    overflow: hidden;
+    background: #f6f5f5;
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.dss-sub .dss-fl {
+    float: left;
+    color: #9a9999;
+}
+.dss-sub .dss-fl .dss-card img,
+.dss-sub .dss-fl .dss-envelope img {
+    width: 20px;
+    height: 12px;
+}
+.dss-sub .dss-fr {
+    float: right;
+}
+.dss-sub .dss-fr .dss-price,
+.dss-sub .dss-fr .dss-count {
+    color: #ef3442;
+}
+.dss-select {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+.dss-select .dss-selectli {
+    margin-left: 0;
+}
+.dss-select .dss-selectli span {
+    margin-right: 15px;
+    color: #282828;
+}
+.dss-select .dss-selectli span:first-of-type {
+    color: #ef3442;
+    border-bottom: 1px solid #ef3442;
+}
+.dss-select .fa-map-marker {
+    float: right;
+    color: #9d9d9d;
+}
+.dss-detail {
+    width: 100%;
+    background: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.dss-detail .dss-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px 4px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.dss-detail .dss-list figure {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 170px!important;
+    -webkit-flex-wrap: wrap!important;
+    -ms-flex-wrap: wrap!important;
+    flex-wrap: wrap!important;
+    margin: 0 0 10px 0!important;
+    border: 1px solid #e5e5e5;
+}
+.dss-detail .dss-list figure img {
+    width: 100%;
+    height: 45%;
+}
+.dss-detail .dss-list figure figcaption {
+    box-sizing: border-box;
+    padding: 5px;
+    overflow: hidden;
+}
+.dss-detail .dss-list figure figcaption .dss-price,
+.dss-detail .dss-list figure figcaption .dss-count {
+    color: #f95050;
+}
+.dss-detail .dss-list figure figcaption .dss-price {
+    text-align: left;
+}
+.dss-detail .dss-list figure figcaption .dss-fr {
+    color: #6a6969;
+    float: right;
+}
+.dss-detail .dss-list figure figcaption .h-fr,
+.dss-detail .dss-list figure figcaption a {
+    float: right;
+}
+.dss-detail .dss-list figure figcaption .h-content {
+    margin: 10px 0;
+    color: #6a6969;
+}
+.dss-detail .dss-list figure figcaption a {
+    width: 72px;
+    height: 26px;
+    color: #f95050;
+    background: #fff;
+    border: 1px solid #f95050;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 5px 0 0;
+}
+.dss-detail .dss-shopintro,
+.dss-detail .dss-noneinfo {
+    display: none;
+}
+.dss-detail .dss-shopintro {
+    margin-top:15px;
+}
+.dss-detail .dss-noneinfo {
+    text-align: center;
+}

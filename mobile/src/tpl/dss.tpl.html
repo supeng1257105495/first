@@ -1,0 +1,60 @@
+
+<div ng-controller="dssctr">
+<header class="dss-header">
+    <div class="fa fa-chevron-left" ui-sref="desCenter"></div>
+    <div class="dss-shoptitle">花伴视觉</div>
+    <div class="fa fa-volume-control-phone"></div>
+</header>
+<main class="dss-main">
+    <div class="dss-subbg">
+        <img src="../img/design/de_0.jpg" alt="">
+    </div>
+    <div class="dss-sub">
+        <div class="dss-fl">认证
+            <span class="dss-card">
+                <img src="../img/design/cp3.png" alt="">
+            </span>
+            <span class="dss-envelope">
+                <img src="../img/design/cp2.png" alt="">
+            </span>
+        </div>
+        <div class="dss-fr">
+            <p class="dss-turnover">成交金额 <span class="dss-price">￥25400</span>成交 <span class="dss-count">44次</span></p>
+        </div>
+    </div>
+    <div class="dss-select">
+        <div>
+            <p class="dss-selectli">
+                <span>全部</span>
+                <span>店铺介绍</span>
+                <span>作品展示</span>
+                <b class="fa fa-map-marker">深圳市</b>
+            </p>
+        </div>
+        <div class="dss-detail">
+            <div class="dss-list">
+                <figure ng-repeat="item in shopList">
+                    <img ng-src="../img/design/{{item.src}}" alt="">
+                    <figcaption>
+                        <p>{{item.title}}</p>
+                        <div>
+                            <span class="dss-price">￥{{item.price}}</span>
+                            <span class="dss-fr">成交<span class="dss-count">{{item.count}}</span>次</span>
+                        </div>
+                        <div class="dss-content">{{item.content}}</div>
+                        <a ui-sref="service">下单</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="dss-shopintro">
+                花伴为您提供不一样的视觉感受，
+                专业的设计师为您量身定做每一个设计，
+                贴近生活，贴近设计，我们就是这么专业。
+                满足您不一样的平面追求，亲们拍之前
+                QQ3426588809 联系我哟。欢迎您的莅临！
+            </div>
+            <div class="dss-noneinfo">没有找到相关信息</div>
+        </div>
+    </div>
+</main>
+</div>
